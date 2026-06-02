@@ -36,19 +36,21 @@ export class BasicListDevice extends ListDevice<BasicListDriver> {
     }
 
     async addTask(content: string, dueDate?: string, dueTime?: string, person?: ListItemPerson): Promise<void> {
-        const _date = dueDate ? DateTime.fromISO(dueDate) : undefined;
-        const _time = dueTime ? DateTime.fromISO(dueTime) : undefined;
-
+        const date = dueDate ? DateTime.fromISO(dueDate) : undefined;
+        const time = dueTime ? DateTime.fromISO(dueTime) : undefined;
+        const dateString = date?.toFormat('yyyy-MM-dd');
+        const timeString = time?.toFormat('HH:mm:ss');
+        
         await this.add<TaskListItem>({
             type: 'task',
             checked: false,
             content,
-            dueDate: _date?.toFormat('yyyy-MM-dd'),
-            dueTime: _time?.toFormat('HH:mm:ss'),
+            dueDate: dateString,
+            dueTime: timeString,
             person
         });
 
-        await this.appDriver.triggerTaskCreated(this, content, person?.name, dueDateTime(dueDate, dueTime)?.toISO() ?? undefined);
+        await this.appDriver.triggerTaskCreated(this, content, person?.name, dueDateTime(dateString, timeString)?.toISO() ?? undefined);
     }
 
     async editTask(id: string, content: string, dueDate?: string, dueTime?: string, person?: ListItemPerson): Promise<boolean> {
