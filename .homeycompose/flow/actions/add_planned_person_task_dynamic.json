@@ -1,0 +1,55 @@
+{
+    "id": "add_planned_person_task_dynamic",
+    "title": {
+        "en": "Add planned person task with a dynamic due date",
+        "nl": "Geplande taak voor persoon toevoegen met een dynamische verloopdatum"
+    },
+    "titleFormatted": {
+        "en": "Add task [[task]] for [[person]] due on [[date]] at [[time]]",
+        "nl": "Taak [[task]] voor [[person]] met deadline op [[date]] om [[time]] toevoegen"
+    },
+    "args": [
+        {
+            "type": "device",
+            "name": "list",
+            "title": {
+                "en": "List",
+                "nl": "Lijst"
+            },
+            "filter": "driver_id=list"
+        },
+        {
+            "type": "text",
+            "name": "task",
+            "title": {
+                "en": "Task",
+                "nl": "Taak"
+            }
+        },
+        {
+            "type": "autocomplete",
+            "name": "person",
+            "title": {
+                "en": "Person",
+                "nl": "Persoon"
+            }
+        },
+        {
+            "type": "text",
+            "name": "date",
+            "title": {
+                "en": "Date",
+                "nl": "Datum"
+            }
+        },
+        {
+            "type": "text",
+            "name": "time",
+            "required": false,
+            "title": {
+                "en": "Time",
+                "nl": "Tijd"
+            }
+        }
+    ]
+}
