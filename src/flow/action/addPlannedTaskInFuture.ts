@@ -9,7 +9,7 @@ export default class extends FlowActionEntity<ListriApp, Args> {
         date.setDate(date.getDate() + args.days);
         var dateString = 
             date.getFullYear()
-            + "-" + String(date.getMonth()).padStart(2, '0')
+            + "-" + String(date.getmonth() + 1).padStart(2, '0')
             + "-" + String(date.getDate()).padStart(2, '0')
 
         await args.list.addTask(args.task, dateString, args.time);
