@@ -1,12 +1,12 @@
 {
-    "id": "add_planned_task_in_future_no_time",
+    "id": "add_planned_task_in_days",
     "title": {
-        "en": "Add planned task in future without time",
-        "nl": "Geplande toekomstige taak zonder tijd toevoegen"
+        "en": "Add planned task in future",
+        "nl": "Geplande toekomstige taak toevoegen"
     },
     "titleFormatted": {
-        "en": "Add task [[task]] due in [[days]] days",
-        "nl": "Maak taak [[task]] met deadline over [[days]] dagen"
+        "en": "Add task [[task]] due in [[days]] days at [[time]]",
+        "nl": "Maak taak [[task]] met deadline over [[days]] dagen om [[time]]"
     },
     "args": [
         {
@@ -33,6 +33,14 @@
             "title": {
                 "en": "Days",
                 "nl": "Dagen"
+            }
+        },
+        {
+            "type": "time",
+            "name": "time",
+            "title": {
+                "en": "Time",
+                "nl": "Tijd"
             }
         }
     ]

@@ -1,12 +1,12 @@
 {
-    "id": "add_planned_task_in_future",
+    "id": "add_planned_person_task_in_days",
     "title": {
-        "en": "Add planned task in future",
-        "nl": "Geplande toekomstige taak toevoegen"
+        "en": "Add planned person task in future",
+        "nl": "Geplande toekomstige taak voor persoon toevoegen"
     },
     "titleFormatted": {
-        "en": "Add task [[task]] due in [[days]] days at [[time]]",
-        "nl": "Maak taak [[task]] met deadline over [[days]] dagen om [[time]]"
+        "en": "Add task [[task]] for [[person]] due in [[days]] days at [[time]]",
+        "nl": "Taak [[task]] voor [[person]] met deadline over [[days]] dagen om [[time]] toevoegen"
     },
     "args": [
         {
@@ -24,6 +24,14 @@
             "title": {
                 "en": "Task",
                 "nl": "Taak"
+            }
+        },
+        {
+            "type": "autocomplete",
+            "name": "person",
+            "title": {
+                "en": "Person",
+                "nl": "Persoon"
             }
         },
         {

@@ -957,7 +957,7 @@
         ]
       },
       {
-        "id": "add_planned_person_task_in_future",
+        "id": "add_planned_person_task_in_days",
         "title": {
           "en": "Add planned person task in future",
           "nl": "Geplande toekomstige taak voor persoon toevoegen"
@@ -1012,7 +1012,7 @@
         ]
       },
       {
-        "id": "add_planned_person_task_in_future_no_time",
+        "id": "add_planned_person_task_in_days_no_time",
         "title": {
           "en": "Add planned person task in future without time",
           "nl": "Geplande toekomstige taak voor persoon zonder tijd toevoegen"
@@ -1151,7 +1151,7 @@
         ]
       },
       {
-        "id": "add_planned_task_in_future",
+        "id": "add_planned_task_in_days",
         "title": {
           "en": "Add planned task in future",
           "nl": "Geplande toekomstige taak toevoegen"
@@ -1198,7 +1198,7 @@
         ]
       },
       {
-        "id": "add_planned_task_in_future_no_time",
+        "id": "add_planned_task_in_days_no_time",
         "title": {
           "en": "Add planned task in future without time",
           "nl": "Geplande toekomstige taak zonder tijd toevoegen"

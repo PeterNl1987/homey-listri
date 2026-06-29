@@ -39,12 +39,12 @@ export default class ListriApp extends App<ListriApp> {
         this.registry.action(Actions.AddPersonTask);
         this.registry.action(Actions.AddPlannedTask);
         this.registry.action(Actions.AddPlannedTaskNoTime);
-        this.registry.action(Actions.AddPlannedTaskInFuture);
-        this.registry.action(Actions.AddPlannedTaskInFutureNoTime);
+        this.registry.action(Actions.AddPlannedTaskInDays);
+        this.registry.action(Actions.AddPlannedTaskInDaysNoTime);
         this.registry.action(Actions.AddPlannedPersonTask);
         this.registry.action(Actions.AddPlannedPersonTaskNoTime);
-        this.registry.action(Actions.AddPlannedPersonTaskInFuture);
-        this.registry.action(Actions.AddPlannedPersonTaskInFutureNoTime);
+        this.registry.action(Actions.AddPlannedPersonTaskInDays);
+        this.registry.action(Actions.AddPlannedPersonTaskInDaysNoTime);
         this.registry.action(Actions.AddProduct);
         this.registry.action(Actions.AddProductQuantity);
         this.registry.action(Actions.AddTask);

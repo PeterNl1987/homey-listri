@@ -1,12 +1,12 @@
 {
-    "id": "add_planned_person_task_in_future",
+    "id": "add_planned_person_task_in_days_no_time",
     "title": {
-        "en": "Add planned person task in future",
-        "nl": "Geplande toekomstige taak voor persoon toevoegen"
+        "en": "Add planned person task in future without time",
+        "nl": "Geplande toekomstige taak voor persoon zonder tijd toevoegen"
     },
     "titleFormatted": {
-        "en": "Add task [[task]] for [[person]] due in [[days]] days at [[time]]",
-        "nl": "Taak [[task]] voor [[person]] met deadline over [[days]] dagen om [[time]] toevoegen"
+        "en": "Add task [[task]] for [[person]] due in [[days]] days",
+        "nl": "Taak [[task]] voor [[person]] met deadline over [[days]] dagen toevoegen"
     },
     "args": [
         {
@@ -41,14 +41,6 @@
             "title": {
                 "en": "Days",
                 "nl": "Dagen"
-            }
-        },
-        {
-            "type": "time",
-            "name": "time",
-            "title": {
-                "en": "Time",
-                "nl": "Tijd"
             }
         }
     ]
