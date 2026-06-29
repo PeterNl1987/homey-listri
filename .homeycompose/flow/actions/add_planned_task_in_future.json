@@ -1,12 +1,12 @@
 {
-    "id": "add_planned_task_dynamic",
+    "id": "add_planned_task_in_future",
     "title": {
-        "en": "Add planned task with a dynamic due date",
-        "nl": "Geplande taak toevoegen met een dynamische verloopdatum"
+        "en": "Add planned task in future",
+        "nl": "Geplande toekomstige taak toevoegen"
     },
     "titleFormatted": {
-        "en": "Add task [[task]] due on [[date]] at [[time]]",
-        "nl": "Maak taak [[task]] met deadline op [[date]] om [[time]]"
+        "en": "Add task [[task]] due in [[days]] days at [[time]]",
+        "nl": "Maak taak [[task]] met deadline over [[days]] dagen om [[time]]"
     },
     "args": [
         {
@@ -27,17 +27,17 @@
             }
         },
         {
-            "type": "text",
-            "name": "date",
+            "type": "number",
+            "name": "days",
+            "min": 0,
             "title": {
-                "en": "Date",
-                "nl": "Datum"
+                "en": "Days",
+                "nl": "Dagen"
             }
         },
         {
-            "type": "text",
+            "type": "time",
             "name": "time",
-            "required": false,
             "title": {
                 "en": "Time",
                 "nl": "Tijd"

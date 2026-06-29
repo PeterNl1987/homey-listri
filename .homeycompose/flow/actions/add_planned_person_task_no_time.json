@@ -1,12 +1,12 @@
 {
-    "id": "add_planned_person_task_dynamic",
+    "id": "add_planned_person_task_no_time",
     "title": {
-        "en": "Add planned person task with a dynamic due date",
-        "nl": "Geplande taak voor persoon toevoegen met een dynamische verloopdatum"
+        "en": "Add planned person task without time",
+        "nl": "Geplande taak zonder tijd voor persoon toevoegen"
     },
     "titleFormatted": {
-        "en": "Add task [[task]] for [[person]] due on [[date]] at [[time]]",
-        "nl": "Taak [[task]] voor [[person]] met deadline op [[date]] om [[time]] toevoegen"
+        "en": "Add task [[task]] for [[person]] due on [[date]]",
+        "nl": "Taak [[task]] voor [[person]] met deadline op [[date]] toevoegen"
     },
     "args": [
         {
@@ -35,20 +35,11 @@
             }
         },
         {
-            "type": "text",
+            "type": "date",
             "name": "date",
             "title": {
                 "en": "Date",
                 "nl": "Datum"
-            }
-        },
-        {
-            "type": "text",
-            "name": "time",
-            "required": false,
-            "title": {
-                "en": "Time",
-                "nl": "Tijd"
             }
         }
     ]

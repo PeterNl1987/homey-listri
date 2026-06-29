@@ -1,12 +1,12 @@
 {
-    "id": "add_planned_task",
+    "id": "add_planned_task_no_time",
     "title": {
-        "en": "Add planned task",
-        "nl": "Geplande taak toevoegen"
+        "en": "Add planned task without time",
+        "nl": "Geplande taak zonder tijd toevoegen"
     },
     "titleFormatted": {
-        "en": "Add task [[task]] due on [[date]] at [[time]]",
-        "nl": "Maak taak [[task]] met deadline op [[date]] om [[time]]"
+        "en": "Add task [[task]] due on [[date]]",
+        "nl": "Maak taak [[task]] met deadline op [[date]]"
     },
     "args": [
         {
@@ -32,14 +32,6 @@
             "title": {
                 "en": "Date",
                 "nl": "Datum"
-            }
-        },
-        {
-            "type": "time",
-            "name": "time",
-            "title": {
-                "en": "Time",
-                "nl": "Tijd"
             }
         }
     ]

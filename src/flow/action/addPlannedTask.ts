@@ -5,7 +5,11 @@ import type { ListriApp } from '../../types';
 @action('add_planned_task')
 export default class extends FlowActionEntity<ListriApp, Args> {
     async onRun(args: Args): Promise<void> {
-        await args.list.addTask(args.task, args.date, args.time);
+        // Date input fields are always sent as dd-MM-yyyy , no matter the locale. See documentation.
+        var splittedDate = args.date.split('-');
+        var dateInput = splittedDate[2] + "-" + splittedDate[1] + "-" + splittedDate[0];
+
+        await args.list.addTask(args.task, dateInput, args.time);
     }
 }
 
@@ -13,5 +17,5 @@ type Args = {
     readonly list: BasicListDevice;
     readonly task: string;
     readonly date: string;
-    readonly time?: string;
+    readonly time: string;
 };

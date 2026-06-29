@@ -1,0 +1,24 @@
+import { action, FlowActionEntity } from '@basmilius/homey-common';
+import type { BasicListDevice } from '../../list';
+import type { ListriApp } from '../../types';
+
+@action('add_planned_task_in_future')
+export default class extends FlowActionEntity<ListriApp, Args> {
+    async onRun(args: Args): Promise<void> {
+        var date = new Date();
+        date.setDate(date.getDate() + args.days);
+        var dateString = 
+            date.getFullYear()
+            + "-" + String(date.getMonth()).padStart(2, '0')
+            + "-" + String(date.getDate()).padStart(2, '0')
+
+        await args.list.addTask(args.task, dateString, args.time);
+    }
+}
+
+type Args = {
+    readonly list: BasicListDevice;
+    readonly task: string;
+    readonly days: number;
+    readonly time: string;
+};
