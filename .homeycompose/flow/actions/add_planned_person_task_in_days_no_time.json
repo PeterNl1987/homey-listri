@@ -1,8 +1,8 @@
 {
     "id": "add_planned_person_task_in_days_no_time",
     "title": {
-        "en": "Add planned person task in future without time",
-        "nl": "Geplande toekomstige taak voor persoon zonder tijd toevoegen"
+        "en": "Add planned person task in given days without time",
+        "nl": "Geplande taak in opgegeven dagen voor persoon zonder tijd toevoegen"
     },
     "titleFormatted": {
         "en": "Add task [[task]] for [[person]] due in [[days]] days",
