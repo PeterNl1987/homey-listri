@@ -95,5 +95,9 @@
     "1.3.5": {
         "en": "Fix bug that did not save due date on new task.",
         "nl": "Bug opgelost die de verloopdatum van taken niet opsloeg."
+    },
+    "1.4.0": {
+        "en": "New flow cards to add planned tasks in the future.",
+        "nl": "Nieuwe flow kaarten voor geplande taken in de toekomst."
     }
 }
