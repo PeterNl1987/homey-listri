@@ -29,7 +29,6 @@
         {
             "type": "autocomplete",
             "name": "person",
-            "required": false,
             "title": {
                 "en": "Person",
                 "nl": "Persoon"
