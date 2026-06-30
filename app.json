@@ -1372,6 +1372,28 @@
         ]
       },
       {
+        "id": "check_due_tasks",
+        "title": {
+          "en": "Check due tasks",
+          "nl": "Vink verlopen taken aan"
+        },
+        "titleFormatted": {
+          "en": "Check due tasks",
+          "nl": "Vink verlopen taken aan"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "list",
+            "title": {
+              "en": "List",
+              "nl": "Lijst"
+            },
+            "filter": "driver_id=list"
+          }
+        ]
+      },
+      {
         "id": "check_product",
         "title": {
           "en": "Check product",

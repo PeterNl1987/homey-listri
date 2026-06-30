@@ -13,6 +13,7 @@ export { default as AddProductQuantity } from './addProductQuantity';
 export { default as AddTask } from './addTask';
 export { default as CheckProduct } from './checkProduct';
 export { default as CheckTask } from './checkTask';
+export { default as CheckDueTasks } from './checkDueTasks';
 export { default as ClearList } from './clearList';
 export { default as GetContents } from './getContents';
 export { default as GetContentsMarkdown } from './getContentsMarkdown';
