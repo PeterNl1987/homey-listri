@@ -6,10 +6,19 @@ import type { ListriApp } from '../../types';
 export default class extends FlowActionEntity<ListriApp, Args> {
     async onRun(args: Args): Promise<void> {
         var tasks = await args.list.findTasksDue();
+        const failures: string[] = [];
 
-        // One by one, using Promise.all won't check them all
+        // One by one, as using Promise.all won't check them all
         for (const task of tasks) {
-            await args.list.check(task.id);
+            try {
+                await args.list.check(task.id);
+            } catch {
+                failures.push(task.id);
+            }
+
+        }
+        if (failures.length > 0) {
+            throw new Error(`Failed to check ${failures.length} due task(s).`);
         }
     }
 }
